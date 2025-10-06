@@ -370,7 +370,7 @@ class DistributedRuntimeDriver:
         
         # Import and run the demo
         sys.path.insert(0, 'demos')
-        from demo_increment3 import RPCDemo
+        from .demos.demo_increment3 import RPCDemo
         
         demo = RPCDemo()
         demo.run_complete_demo()
