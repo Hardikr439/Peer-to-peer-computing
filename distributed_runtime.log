@@ -36,3 +36,65 @@
 2025-10-07 00:02:04,406 - demo_increment3 - INFO - Stopped server 2
 2025-10-07 00:02:04,452 - src.communication.rpc_server.demo-nod - INFO - RPC server stopped
 2025-10-07 00:02:04,452 - demo_increment3 - INFO - Stopped server 3
+2025-10-07 00:24:24,862 - __main__ - INFO - Registered basic functions: hello_world, math_operations
+2025-10-07 00:24:24,862 - __main__ - INFO - Registered processing functions: data_processing, json_validation
+2025-10-07 00:24:24,862 - __main__ - INFO - Registered utility functions: slow_function, error_function
+2025-10-07 00:24:24,863 - root - ERROR - Fatal error occurred
+Traceback (most recent call last):
+  File "C:\Users\ranah\OneDrive\Desktop\tp\DISTRO\main.py", line 583, in main
+    driver.mode_coordinator(args)
+  File "C:\Users\ranah\OneDrive\Desktop\tp\DISTRO\main.py", line 204, in mode_coordinator
+    registry = FileBasedRegistry(
+               ^^^^^^^^^^^^^^^^^^
+TypeError: FileBasedRegistry.__init__() got an unexpected keyword argument 'stale_timeout'
+2025-10-07 00:25:50,726 - __main__ - INFO - Registered basic functions: hello_world, math_operations
+2025-10-07 00:25:50,726 - __main__ - INFO - Registered processing functions: data_processing, json_validation
+2025-10-07 00:25:50,726 - __main__ - INFO - Registered utility functions: slow_function, error_function
+2025-10-07 00:25:50,738 - src.communication.rpc_server.coordina - INFO - RPC server started on 0.0.0.0:8080
+2025-10-07 00:25:50,738 - root - ERROR - Fatal error occurred
+Traceback (most recent call last):
+  File "C:\Users\ranah\OneDrive\Desktop\tp\DISTRO\main.py", line 581, in main
+    driver.mode_coordinator(args)
+  File "C:\Users\ranah\OneDrive\Desktop\tp\DISTRO\main.py", line 216, in mode_coordinator
+    heartbeat = HeartbeatService(
+                ^^^^^^^^^^^^^^^^^
+TypeError: HeartbeatService.__init__() got an unexpected keyword argument 'node_info'
+2025-10-07 00:27:25,573 - __main__ - INFO - Registered basic functions: hello_world, math_operations
+2025-10-07 00:27:25,573 - __main__ - INFO - Registered processing functions: data_processing, json_validation
+2025-10-07 00:27:25,573 - __main__ - INFO - Registered utility functions: slow_function, error_function
+2025-10-07 00:27:25,587 - src.communication.rpc_server.coordina - INFO - RPC server started on 0.0.0.0:8080
+2025-10-07 00:27:25,589 - src.networking.heartbeat.coordina - INFO - Heartbeat loop started
+2025-10-07 00:27:25,589 - src.networking.heartbeat.coordina - INFO - Cleanup loop started
+2025-10-07 00:27:25,589 - src.networking.heartbeat.coordina - INFO - Heartbeat service started for node coordina
+2025-10-07 00:27:30,606 - root - ERROR - Fatal error occurred
+Traceback (most recent call last):
+  File "C:\Users\ranah\OneDrive\Desktop\tp\DISTRO\main.py", line 581, in main
+    driver.mode_coordinator(args)
+  File "C:\Users\ranah\OneDrive\Desktop\tp\DISTRO\main.py", line 240, in mode_coordinator
+    nodes = registry.get_active_nodes()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'FileBasedRegistry' object has no attribute 'get_active_nodes'
+2025-10-07 00:28:11,359 - __main__ - INFO - Registered basic functions: hello_world, math_operations
+2025-10-07 00:28:11,360 - __main__ - INFO - Registered processing functions: data_processing, json_validation
+2025-10-07 00:28:11,360 - __main__ - INFO - Registered utility functions: slow_function, error_function
+2025-10-07 00:28:11,370 - src.communication.rpc_server.coordina - INFO - RPC server started on 0.0.0.0:8080
+2025-10-07 00:28:11,371 - src.networking.heartbeat.coordina - INFO - Heartbeat loop started
+2025-10-07 00:28:11,372 - src.networking.heartbeat.coordina - INFO - Cleanup loop started
+2025-10-07 00:28:11,372 - src.networking.heartbeat.coordina - INFO - Heartbeat service started for node coordina
+2025-10-07 00:29:42,308 - __main__ - INFO - Registered basic functions: hello_world, math_operations
+2025-10-07 00:29:42,308 - __main__ - INFO - Registered processing functions: data_processing, json_validation
+2025-10-07 00:29:42,308 - __main__ - INFO - Registered utility functions: slow_function, error_function
+2025-10-07 00:29:42,324 - src.communication.rpc_server.worker-8 - INFO - RPC server started on 0.0.0.0:8081
+2025-10-07 00:29:42,325 - src.networking.heartbeat.worker-8 - INFO - Heartbeat loop started
+2025-10-07 00:29:42,326 - src.networking.heartbeat.worker-8 - INFO - Cleanup loop started
+2025-10-07 00:29:42,326 - src.networking.heartbeat.worker-8 - INFO - Heartbeat service started for node worker-8
+2025-10-07 00:30:06,245 - __main__ - INFO - Received signal 2, initiating graceful shutdown...
+2025-10-07 00:30:06,420 - src.networking.heartbeat.coordina - INFO - Cleanup loop stopped
+2025-10-07 00:30:06,421 - src.networking.heartbeat.coordina - INFO - Heartbeat loop stopped
+2025-10-07 00:30:06,422 - src.networking.heartbeat.coordina - INFO - Heartbeat service stopped for node coordina
+2025-10-07 00:30:06,826 - src.communication.rpc_server.coordina - INFO - RPC server stopped
+2025-10-07 00:30:13,572 - __main__ - INFO - Received signal 2, initiating graceful shutdown...
+2025-10-07 00:30:14,359 - src.networking.heartbeat.worker-8 - INFO - Heartbeat loop stopped
+2025-10-07 00:30:14,359 - src.networking.heartbeat.worker-8 - INFO - Cleanup loop stopped
+2025-10-07 00:30:14,361 - src.networking.heartbeat.worker-8 - INFO - Heartbeat service stopped for node worker-8
+2025-10-07 00:30:14,473 - src.communication.rpc_server.worker-8 - INFO - RPC server stopped

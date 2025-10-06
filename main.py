@@ -135,8 +135,7 @@ class DistributedRuntimeDriver:
         
         # Create registry (file-based for persistence across devices)
         registry = FileBasedRegistry(
-            registry_file=args.registry_file,
-            stale_timeout=args.heartbeat_timeout * 3
+            registry_file=args.registry_file
         )
         
         # Start RPC server
@@ -149,9 +148,9 @@ class DistributedRuntimeDriver:
         
         # Start heartbeat service
         heartbeat = HeartbeatService(
-            node_info=node_info,
+            node=node_info,
             registry=registry,
-            interval=args.heartbeat_interval
+            heartbeat_interval=args.heartbeat_interval
         )
         heartbeat.start()
         self.components.append(heartbeat)
@@ -174,7 +173,7 @@ class DistributedRuntimeDriver:
                 
                 # Show periodic status
                 if int(time.time()) % 30 == 0:  # Every 30 seconds
-                    nodes = registry.get_active_nodes()
+                    nodes = registry.list_nodes(NodeStatus.ONLINE)
                     print(f"\n📊 Status Update - Active nodes: {len(nodes)}")
                     for node in nodes:
                         print(f"   • {node.node_id} ({node.role.value}) - {node.ip_address}:{node.port}")
@@ -202,8 +201,7 @@ class DistributedRuntimeDriver:
         
         # Create registry
         registry = FileBasedRegistry(
-            registry_file=args.registry_file,
-            stale_timeout=args.heartbeat_timeout * 3
+            registry_file=args.registry_file
         )
         
         # Start RPC server
@@ -216,9 +214,9 @@ class DistributedRuntimeDriver:
         
         # Start heartbeat service
         heartbeat = HeartbeatService(
-            node_info=node_info,
+            node=node_info,
             registry=registry,
-            interval=args.heartbeat_interval
+            heartbeat_interval=args.heartbeat_interval
         )
         heartbeat.start()
         self.components.append(heartbeat)
@@ -239,7 +237,7 @@ class DistributedRuntimeDriver:
                 time.sleep(5)
                 
                 # Show network status
-                nodes = registry.get_active_nodes()
+                nodes = registry.list_nodes(NodeStatus.ONLINE)
                 worker_nodes = [n for n in nodes if n.role == NodeRole.WORKER]
                 
                 print(f"\n📋 Network Status:")
