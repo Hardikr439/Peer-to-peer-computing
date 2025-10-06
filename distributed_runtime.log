@@ -1,0 +1,38 @@
+2025-10-06 23:56:50,402 - demo_increment3 - INFO - Setting up 3 demo nodes...
+2025-10-06 23:56:50,423 - demo_increment3 - INFO - Node 1: Registered hello_world, math_add
+2025-10-06 23:56:50,424 - demo_increment3 - INFO - Node 2: Registered data_processing, slow_function
+2025-10-06 23:56:50,424 - demo_increment3 - INFO - Node 3: Registered json_validation, error_function
+2025-10-06 23:56:50,424 - demo_increment3 - INFO - Created 3 demo nodes
+2025-10-06 23:56:50,424 - demo_increment3 - INFO - Starting all RPC servers...
+2025-10-06 23:56:50,436 - src.communication.rpc_server.demo-nod - INFO - RPC server started on 0.0.0.0:8080
+2025-10-06 23:56:50,639 - demo_increment3 - INFO - Started server 1 on port 8080
+2025-10-06 23:56:50,640 - src.communication.rpc_server.demo-nod - INFO - RPC server started on 0.0.0.0:8081
+2025-10-06 23:56:50,841 - demo_increment3 - INFO - Started server 2 on port 8081
+2025-10-06 23:56:50,842 - src.communication.rpc_server.demo-nod - INFO - RPC server started on 0.0.0.0:8082
+2025-10-06 23:56:51,044 - demo_increment3 - INFO - Started server 3 on port 8082
+2025-10-06 23:57:31,502 - demo_increment3 - INFO - Stopping all RPC servers...
+2025-10-06 23:57:32,013 - src.communication.rpc_server.demo-nod - INFO - RPC server stopped
+2025-10-06 23:57:32,013 - demo_increment3 - INFO - Stopped server 1
+2025-10-06 23:57:32,476 - src.communication.rpc_server.demo-nod - INFO - RPC server stopped
+2025-10-06 23:57:32,476 - demo_increment3 - INFO - Stopped server 2
+2025-10-06 23:57:32,879 - src.communication.rpc_server.demo-nod - INFO - RPC server stopped
+2025-10-06 23:57:32,879 - demo_increment3 - INFO - Stopped server 3
+2025-10-07 00:01:34,271 - demo_increment3 - INFO - Setting up 3 demo nodes...
+2025-10-07 00:01:34,418 - demo_increment3 - INFO - Node 1: Registered hello_world, math_add
+2025-10-07 00:01:34,520 - demo_increment3 - INFO - Node 2: Registered data_processing, slow_function
+2025-10-07 00:01:34,621 - demo_increment3 - INFO - Node 3: Registered json_validation, error_function
+2025-10-07 00:01:34,622 - demo_increment3 - INFO - Created 3 demo nodes
+2025-10-07 00:01:34,622 - demo_increment3 - INFO - Starting all RPC servers...
+2025-10-07 00:01:34,634 - src.communication.rpc_server.demo-nod - INFO - RPC server started on 0.0.0.0:8080
+2025-10-07 00:01:34,835 - demo_increment3 - INFO - Started server 1 on port 8080
+2025-10-07 00:01:34,836 - src.communication.rpc_server.demo-nod - INFO - RPC server started on 0.0.0.0:8081
+2025-10-07 00:01:35,037 - demo_increment3 - INFO - Started server 2 on port 8081
+2025-10-07 00:01:35,038 - src.communication.rpc_server.demo-nod - INFO - RPC server started on 0.0.0.0:8082
+2025-10-07 00:01:35,239 - demo_increment3 - INFO - Started server 3 on port 8082
+2025-10-07 00:02:03,616 - demo_increment3 - INFO - Stopping all RPC servers...
+2025-10-07 00:02:04,127 - src.communication.rpc_server.demo-nod - INFO - RPC server stopped
+2025-10-07 00:02:04,127 - demo_increment3 - INFO - Stopped server 1
+2025-10-07 00:02:04,406 - src.communication.rpc_server.demo-nod - INFO - RPC server stopped
+2025-10-07 00:02:04,406 - demo_increment3 - INFO - Stopped server 2
+2025-10-07 00:02:04,452 - src.communication.rpc_server.demo-nod - INFO - RPC server stopped
+2025-10-07 00:02:04,452 - demo_increment3 - INFO - Stopped server 3

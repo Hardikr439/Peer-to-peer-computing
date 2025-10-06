@@ -1,0 +1,10 @@
+# Requirements for Distributed Function Runtime
+
+# Core dependencies
+psutil>=5.9.0
+python-dotenv>=0.19.0  # Environment configuration management
+
+# Optional dependencies for enhanced features
+# requests>=2.25.0  # HTTP client for advanced RPC features  
+# websockets>=10.0  # Real-time communication (future)
+# cryptography>=3.4.0  # Security features (future)
